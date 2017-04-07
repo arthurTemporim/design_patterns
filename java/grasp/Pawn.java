@@ -1,4 +1,4 @@
-public class Pawn implements Movement {
+public class Pawn implements Movement{
 	private String kind;
 
 	public Pawn(String kind) {
@@ -11,15 +11,9 @@ public class Pawn implements Movement {
 	public void setKind(String kind) {
 		this.kind = kind;
 	}
-
-	// Polymorphism.
+	
 	public void move() {
-		if(this.getKind() == "carro") {
-			System.out.println("VRUUUUM!");
-		} else if(this.getKind() == "boneca") {
-			System.out.println("Barbie!");
-		} else {
-			System.out.println("Esse Pino não existe!");
-		}
+		System.out.println("Movemento Do Pino Simples.");
 	}
+	
 }

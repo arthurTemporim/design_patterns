@@ -13,11 +13,13 @@ public class Main {
 		deal.makeDeal(player1, board.getSquares().get(4));
 
 		System.out.println("------------------------");
-		Pawn carro = new Pawn("carro");
-		Pawn boneca = new Pawn("boneca");
-
+		Pawn carro = new Car("carro");
+		Doll boneca = new Doll("boneca");
 		carro.move();
 		boneca.move();
 		System.out.println("------------------------");
+		
+		Pawn pawn = new Pawn("Peão");
+		//pawn.move();
 	}
 }
