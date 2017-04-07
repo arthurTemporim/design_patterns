@@ -9,20 +9,6 @@ public class Board {
 		makeBoard(squareAmount);
 	}
 
-	public String getName() {
-		return this.name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public List<Square> getSquares() {
-		return this.squares;
-	}
-	public void setSquares(List<Square> squares) {
-		this.squares = squares;
-	}
-
 	public void makeBoard(int squareAmount) {
 		squares = new ArrayList<Square>();
 		Square aux;
@@ -39,7 +25,19 @@ public class Board {
 			System.out.print(getSquares().get(i).getName() + " ");
 			System.out.println(getSquares().get(i).getValue());
 		}
-		
 	}
 
+	public String getName() {
+		return this.name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<Square> getSquares() {
+		return this.squares;
+	}
+	public void setSquares(List<Square> squares) {
+		this.squares = squares;
+	}
 }
