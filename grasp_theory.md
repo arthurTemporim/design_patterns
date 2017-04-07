@@ -78,7 +78,9 @@ reutilização?
 
 * Exemplo
 
-> Um objeto de uma classe **Deal** invoca métodos de um objeto de outra classe **Square**.
+	Evitar Herança;
+	Evitar dependências entre classes;
+	Evitar composição.
 
 ### 5. Controller
 
@@ -111,6 +113,7 @@ mediador não existe mais acoplamento direto entreo os objetos.
 * Exemplo
 
 	DAO
+	Deal
 
 ### 7. Polymorphism
 
@@ -126,7 +129,7 @@ mediador não existe mais acoplamento direto entreo os objetos.
 
 * Exemplo
 
-	pawn.move(car), pawn.move(doll)
+	car.move(), doll.move()
 
 ### 8. Protected Variations
 
@@ -142,7 +145,8 @@ criação seja estável. **Interface**.
 * Exemplo
 
 
-	<< Interface >> Pawn
+	<< Interface >> Movement
+	Pawn implements Movement
 
 ### 9. Pure Fabrication
 
