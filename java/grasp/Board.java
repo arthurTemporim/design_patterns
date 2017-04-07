@@ -9,6 +9,8 @@ public class Board {
 		makeBoard(squareAmount);
 	}
 
+	// Creator.
+	// Information Expert.
 	public void makeBoard(int squareAmount) {
 		squares = new ArrayList<Square>();
 		Square aux;

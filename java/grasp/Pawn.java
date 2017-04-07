@@ -12,6 +12,7 @@ public class Pawn implements Movement {
 		this.kind = kind;
 	}
 
+	// Polymorphism.
 	public void move() {
 		if(this.getKind() == "carro") {
 			System.out.println("VRUUUUM!");

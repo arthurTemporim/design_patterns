@@ -5,6 +5,7 @@ public class Main {
 		Player player2 = new Player("Robin");
 
 
+		System.out.println("------------------------");
 		board.printSquares();
 		System.out.println("------------------------");
 		
@@ -17,5 +18,6 @@ public class Main {
 
 		carro.move();
 		boneca.move();
+		System.out.println("------------------------");
 	}
 }

@@ -126,7 +126,7 @@ mediador não existe mais acoplamento direto entreo os objetos.
 
 * Exemplo
 
-	pawn(car), pawn(doll)
+	pawn.move(car), pawn.move(doll)
 
 ### 8. Protected Variations
 
