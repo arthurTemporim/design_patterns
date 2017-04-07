@@ -1,6 +1,6 @@
 # GRASP
 
-General responsibility assignment software patterns (or principles), 
+General responsibility assignment software patterns (or principles),
 abbreviated GRASP.
 
 ## O que é Padrão de Projeto?
@@ -17,141 +17,145 @@ GRASP são mais voltados para atribuição de responsabilidades de objetos (OO).
 
 ### 1. Creator
 
-	* Problema
+* Problema
 
 	Quem deve ser o responsável pela criação de um objeto?
 
-	* Solução
+* Solução
 
 	Se B **contém** A;
+
 	B registra A;
+
 	B usa A de maneira muito próxima;
+
 	B tem dados iniciais de A que serão passados em sua criação.
 
-	* Exemplo
+* Exemplo
 
 	Board (tabuleiro) -> Square (propriedades).
-	
+
 ### 2. Information Expert
 
-	* Problema
-	
+* Problema
+
 	A quem deve ser atribuido responsabilidades?
 
-	* Solução
+* Solução
 
 	Atribua a responsabilidade ao **especialista**, quem tem a informação
 necessária para executar a ação.
 
-	* Exemplo
+* Exemplo
 
 	makeBoard() (montarTabuleiro)
 
-### 3. High Cohesion 
+### 3. High Cohesion
 
-	* Problema
+* Problema
 
 	Como manter objetos com propósitos claros?
 
-	* Solução
+* Solução
 
 	Atribuir responsabilidades buscando a alta coesão, cada elemento com suas
 responsabilidades específicas.
 
-	* Exemplo
+* Exemplo
 
 	Deal (transação).
 
 ### 4. Low coupling
 
-	* Problema
+* Problema
 
-	Como ter baixa dependência, baixo impacto de modificações e mais 
+	Como ter baixa dependência, baixo impacto de modificações e mais
 reutilização?
 
-	* Solução
+* Solução
 
 	Dar responsabilidades de forma a diminuir o acoplamento.
 
-	* Exemplo
+* Exemplo
 
 > Um objeto de uma classe **Deal** invoca métodos de um objeto de outra classe **Square**.
 
 ### 5. Controller
 
-	* Problema
+* Problema
 
 	Qual objeto recebe e coordena uma operação após passar pela UI?
 
-	* Solução
+* Solução
 
-	Usar uma classe controladora que representa todos os eventos do sistema 
+	Usar uma classe controladora que representa todos os eventos do sistema
 dentro de uma funcionalidade(Caso de Uso, História de Usuário...).
-	
+
 	Controllers devem delegar a outros objetos o serviço a ser feito.
 
-	* Exemplo
+* Exemplo
 
 	MVC
 
 ### 6. Indirection
 
-	* Problema
+* Problema
 
 	Como evitar acoplamento direto entre 2 ou mais objetos?
 
-	* Solução
+* Solução
 
 	Definir a responsabilidade para um objeto intermediário, com esse objeto
 mediador não existe mais acoplamento direto entreo os objetos.
 
-	* Exemplo
+* Exemplo
 
-	DAO	
+	DAO
 
 ### 7. Polymorphism
 
-	* Problema
+* Problema
 
 	Como lidar com as várias alternativas dos objetos?
 
-	* Solução
+* Solução
 
 	Quando a variação é o comportamento ou tipo é possível usar polimorfismo.
-	**Sobrecarga** e **Sobreescrita**.
 
-	* Exemplo
+	(**Sobrecarga** / **Sobreescrita**)
+
+* Exemplo
 
 	pawn(car), pawn(doll)
 
 ### 8. Protected Variations
 
-	* Problema
+* Problema
 
 	Como evitar comportamentos indesejados em variações dos elementos?
 
-	* Solução
+* Solução
 
 	Identificar pontos de instabilidade e designar responsabilidades em que a
 criação seja estável. **Interface**.
 
-	* Exemplo
+* Exemplo
 
 	<<Interface>> Pawn
 
 ### 9. Pure Fabrication
 
-	* Problema
-	
-	O que fazer quando não é desejado violar a coesão e acoplamento mas a 
+* Problema
+
+	O que fazer quando não é desejado violar a coesão e acoplamento mas a
 solução criada não é apropriada? (**especialista**)
 
-	* Solução
+* Solução
 
 	Designar alta coesão para uma classe que convenientemente não representa
 problema para o domínio.
 
-	* Exemplo
+* Exemplo
 
 	**Deal**
 

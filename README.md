@@ -10,14 +10,14 @@ All folder of pattern contains a Makefile to run it.
 
 ### Play
 
-#### ake 
+#### `make`
 
 	Build
 
-#### make run
+#### `make run`
 
 	Execute
 
-#### make clean
+#### `make clean`
 
 	rm .class files
