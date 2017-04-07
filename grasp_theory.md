@@ -141,7 +141,8 @@ criação seja estável. **Interface**.
 
 * Exemplo
 
-	<<Interface>> Pawn
+
+	<< Interface >> Pawn
 
 ### 9. Pure Fabrication
 

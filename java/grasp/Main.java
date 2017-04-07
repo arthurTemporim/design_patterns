@@ -10,5 +10,12 @@ public class Main {
 		
 		Deal deal = new Deal();
 		deal.makeDeal(player1, board.getSquares().get(4));
+
+		System.out.println("------------------------");
+		Pawn carro = new Pawn("carro");
+		Pawn boneca = new Pawn("boneca");
+
+		carro.move();
+		boneca.move();
 	}
 }
