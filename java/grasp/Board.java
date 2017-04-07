@@ -6,7 +6,7 @@ public class Board {
 
 	public Board(String name, int squareAmount) {
 		setName(name);
-		setSquares(squareAmount);
+		makeBoard(squareAmount);
 	}
 
 	public String getName() {
@@ -19,14 +19,18 @@ public class Board {
 	public List<Square> getSquares() {
 		return this.squares;
 	}
-	public void setSquares(int squareAmount) {
+	public void setSquares(List<Square> squares) {
+		this.squares = squares;
+	}
+
+	public void makeBoard(int squareAmount) {
 		squares = new ArrayList<Square>();
 		Square aux;
 		for(int i=0;i<squareAmount;i++) {
 			aux = new Square("Propriedade", 300.50);
 			squares.add(aux);
 		}
-		this.squares = squares;
+		setSquares(squares);
 	}
 
 	public void printSquares(){
